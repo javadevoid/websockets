@@ -1,0 +1,107 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "verdana" ;
+  font-style: italic;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Post it */
+.post-it-container {
+  float: left;
+  width: 226px;
+  height: 266px;
+  padding-top: 26px;
+  padding-bottom: 36px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 1px black solid;
+  border-radius: 5px;
+  margin:4px;
+  box-shadow: 5px 5px 5px #888888;
+  overflow: hidden;
+  background-image: url('/images/pin.png');
+  background-repeat: no-repeat;
+}
+
+.post-it-info {
+  float: left;
+  width: 210px;
+  height: 192px; 
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+  overflow-y: scroll; 
+}
+
+.post-it-options {
+  float: left;
+  width: 210px;
+  height: 32px; 
+  padding-top: 4px;
+}
+
+.post-it-option {
+  float: left;
+  text-align: center;
+  width: 105px;
+  height: 32px; 
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: left;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
